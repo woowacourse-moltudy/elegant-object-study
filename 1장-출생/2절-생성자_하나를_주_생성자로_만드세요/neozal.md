@@ -1,9 +1,9 @@
 # 1-2. 생성자 하나를 주 생성자로 만드세요
 
-### 2~3개의 메서드와 5~10개의 controller 를 가진 객체를 만들어라
+### 2 ~ 3개의 메서드와 5 ~ 10개의 controller 를 가진 객체를 만들어라
 - 여기서 말하는 메서드는 public 메서드이다. private 메서드는 예외이다.
 
-### 주 controller 와 부 controller 로 나누어서 호출하라
+### 주 constructor 와 부 constructor 로 나누어서 호출하라. (하나의 주 생성자여 여러개의 부 생성자를 가져라)
 ```java
 class Cash {
     private int dollars;
@@ -23,7 +23,7 @@ class Cash {
 ```
 
 - 위 코드에서 주 생성자는 `Cash(int dlr)` 시그니처를 가진 생성자이며, 부 생성자는 나머지 생성자들이다.
-주 controller를 모든 부 controller 뒤에 위치시킨다. -> 유지보수성을 위함
+주 constructor 모든 부 constructor 뒤에 위치시킨다. -> 유지보수성을 위함
 
 - 이와 같은 코드를 작성하면, 인자의 검증과 같은 로직의 중복을 막을 수 있다(주 생성자에서 한번만 검증하면 된다.).
 - 메서드 오버로딩을 이용하면 content(File), contentInCharset(File, Charset)대신 content(File), content(File, Charset)으로 소스를 간결하게 변경 가능.
@@ -31,7 +31,7 @@ class Cash {
 ## 나의 생각
 몇가지 생각을 제외하고는 완벽하게 동의한다.
 
-- 2~3개의 메서드와 5~10개의 controller 를 가진 객체를 만들어라
+- 2~3개의 메서드와 5~10개의 constructor 를 가진 객체를 만들어라
     - 아주 좋은 practice라고 생각한다. 메서드의 크기를 작게 만든다는 것은, 객체가 처리할 수 있는 데이터(필드)가 작아진다는 이야기가 되며, 이는 응집도를 자연스럽게 올릴 수 있는 방법이 된다.
     
 - 주 controller 와 부 controller 로 나누어서 호출하라
