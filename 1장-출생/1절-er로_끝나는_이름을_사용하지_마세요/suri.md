@@ -19,4 +19,4 @@
 
 
 
-![img](https://blog.kakaocdn.net/dn/UlZdK/btq2hCkbHXC/K4hDzjnu1g1VKoKkkjXdWk/img.gif)
+![img](https://blog.kakaocdn.net/dn/UlZdK/btq2hCkbHXC/K4hDzjnu1g1VKoKkkjXdWk/img.gif){ width=50% }
