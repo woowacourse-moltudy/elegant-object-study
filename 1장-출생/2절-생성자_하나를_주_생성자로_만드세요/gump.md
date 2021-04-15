@@ -2,7 +2,7 @@
 
 ## **정리**
 
-### **2~3개의 메서드와 5~10개의 생성자를 가지는 클래스를 만드세요**
+### **2 - 3개의 메서드와 5 -10개의 생성자를 가지는 클래스를 만드세요**
 
 메서드의 수보다 생성자의 수가 더 많아야 응집도가 높고 견고한 클래스를 만들 수 있어요.
 
@@ -10,19 +10,19 @@
 
 ```java
 class Cash {
-		private int dollars;
-		
-		Cash(float dollars) {
-			this((int) dollars);
-		}
+    private int dollars;
 
-		Cash(String dollars) {
-			this(Cash.parse(dollars));
-		}
+    Cash(float dollars) {
+        this((int) dollars);
+    }
 
-		Cash(int dollars) {
-			this.dollars = dollars;
-		}
+    Cash(String dollars) {
+        this(Cash.parse(dollars));
+    }
+
+    Cash(int dollars) {
+        this.dollars = dollars;
+    }
 }
 ```
 

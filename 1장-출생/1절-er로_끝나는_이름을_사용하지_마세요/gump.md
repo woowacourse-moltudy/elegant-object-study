@@ -16,15 +16,15 @@
 
 ```java
 class NumberFormatter {
-		private int number;
+    private int number;
 
-		NumberFormatter(int number) {
-				this.number = number;
-		}
+    NumberFormatter(int number) {
+        this.number = number;
+    }
 
-		public String format() {
-				return String.format("%d", this.number);
-		}	
+    public String format() {
+        return String.format("%d", this.number);
+    }
 }
 ```
 
@@ -34,19 +34,19 @@ class NumberFormatter {
 
 ```java
 class Number {
-		private int number;
+    private int number;
 
-		Number(int number) {
-				this.number = number;
-		}
+    Number(int number) {
+        this.number = number;
+    }
 
-		public String toString() {
-				return String.format("%d", this.number);
-		}	
+    public String toString() {
+        return String.format("%d", this.number);
+    }
 
-		public double toDouble() {
-				return (double)number;
-		}	
+    public double toDouble() {
+        return (double)number;
+    }
 }
 ```
 
